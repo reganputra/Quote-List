@@ -63,6 +63,7 @@ class ListQuotesActivity : AppCompatActivity() {
                         val author = jsonObject.getString("author")
                         listQuote.add("\n$quote\n — $author\n")
 
+                        // memasukan ke data ke adapter
                         val adapter = QuoteAdapter(listQuote)
                         binding.quotesList.adapter = adapter
                     }
