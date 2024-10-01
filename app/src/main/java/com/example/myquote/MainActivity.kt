@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                 val result = String(responseBody)
                 Log.d(TAG, result)
                 try {
-                    val responObject = JSONObject(result)
+                    val responObject = JSONObject(result) // take object type data from JSON
                     val author = responObject.getString("author")
                     val quote = responObject.getString("en")
 

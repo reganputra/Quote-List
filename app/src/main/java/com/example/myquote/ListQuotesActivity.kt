@@ -56,7 +56,7 @@ class ListQuotesActivity : AppCompatActivity() {
                 Log.d(TAG, result)
 
                 try {
-                    val jsonArray = JSONArray(result)
+                    val jsonArray = JSONArray(result) // take array type from JSON
                     for (i in 0 until jsonArray.length()){
                         val jsonObject = jsonArray.getJSONObject(i)
                         val quote = jsonObject.getString("en")
